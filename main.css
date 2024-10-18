@@ -1,0 +1,874 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0a3e40;
+}
+/*=========================header-1==================*/
+.header-1 {
+    width: 100%;
+    height: 80px;
+    background-color: darkslategray;
+    position: fixed;
+    z-index: 100;
+    opacity: .9;
+}
+.container-1 {
+    width: 85%;
+    margin: auto;
+}
+.header-1 .logo {
+    margin:5px 0;
+    width: 90px;
+    cursor: pointer;
+}
+ul {
+    list-style: none;
+}
+.list {
+    float: right; 
+    line-height: 35px;
+}
+.list li {
+    display: inline-block;
+    margin-top: 20px;
+}
+.list li a {
+    color: white;
+    padding: 30px 20px;
+    font-size: 20px;
+    font-weight:900;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.list li a:hover{
+    border-bottom: 3px solid red; 
+     background-color:rgb(58, 95, 95); 
+    transition: 2s; 
+    color: #008287;
+   
+} 
+.list li a:focus{
+    color: red;
+    text-decoration: line-through;
+}
+/*=========================== header-2 ====================*/
+.header-2 {
+    width: 100%;
+    background-color: #257174b3;
+    opacity: 0;
+    position: fixed;
+    margin-top: 80px;
+    transition: 2s;
+    z-index: 400;
+    padding: 20px 0;
+    color: white;
+}
+.header-2:hover {
+    opacity: 1;
+}
+.header-2 i {
+    font-size: 25px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+.header-2 span a {
+    text-transform: capitalize;
+    margin-left: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.header-2 input {
+    width: 400px;
+    height: 50px;
+    margin-left: 550px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+.header-2 .last-i{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    z-index: 50;
+    color: #257174;
+}
+
+/* ==================================background================= */
+.background1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/background3.jpg);
+    position: relative;
+}
+
+.background1 .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+ .background1 .overlay1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000080;
+}
+.background1 .title .title1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+.background1 .title .title1 span{
+    color:white;
+}
+.background1 .title .title1 b{
+    font-style: italic;
+    color:rgb(22, 22, 100);
+}
+.background1 .title .title1 .s2{
+    text-decoration: line-through;
+    color: red;
+}
+.background1 .title p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: white;
+}
+.background1 .title .btn{
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+.background1 .title .btn2{
+    background-color: red;
+    color: white;
+}
+.background1 .title .btn:hover{
+    opacity: .5;
+}
+.background1 .title .btn2:hover{
+    color: red;
+    background-color:#13a1a1;
+}
+/*====================== icon-fexed======================= */
+.parent-icons {
+    width: 25%;
+    height: 100px;
+    position: fixed;
+    right: -350px;
+    top: 50%;
+    background-color: #257174dd;
+    transition: 1.5s;
+    z-index: 300;
+}
+.parent-icons:hover {
+    right: 0;
+    
+}
+.parent-icons .child {
+    opacity: 0;
+    transition: 2s;
+}
+.parent-icons:hover .child {
+    opacity: 1;
+}
+.parent-icons .child p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #b51010;
+    text-transform: capitalize;
+}
+.parent-icons .child p i{
+    color: #000000;
+}
+.parent-icons .child .icons {
+    margin-top: 15px;
+    margin-left: 50px;
+    font-size: 40px;
+}
+.parent-icons .active {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #13a1a1;
+    position: fixed;
+    right: 5px;
+    top: 54%;
+    border-radius: 50%;
+    padding: 10px;
+    /* color: #000000; */
+    font-size: 25px;
+    cursor: pointer;
+}
+/*================================title2 =============================*/
+.title2{
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 60px 0px 0px 0px;
+    color: #13a1a1;
+}
+.line{
+    border:3px solid #257174;
+    margin:auto;
+    border-radius: 50%;
+    width: 170px;
+}
+/*=================================== divices========================= */
+
+
+.containerr{
+    width: 100%;
+    height: 320px;
+    background-color: #13a1a1;
+    margin: 50px auto;
+    position: relative;
+}
+.containerr .parent-2{
+    width: 100%;
+    padding: 15px ;
+    position: relative;
+}
+.containerr .parent-2 .card-1{
+    width: 30%;
+    height: 220px;
+    margin-top: 20px;
+    background-image: url(img/mback.jpeg);
+    background-size: cover;
+    position: relative;
+    float: left;
+    margin-left: 2.5%;
+    border-radius: 5px;
+    z-index: 4;
+}
+.containerr .parent-2 .card-2{
+    background-image: url(img/images\ \(1\).jpeg);
+}
+.containerr .parent-2 .card-3{
+    background-image: url(img/images\ \(3\).jpeg);
+}
+.containerr .parent-2 .card-1 h2,.pp,.aa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: wheat;
+    text-align: center;
+    z-index: 14;
+}
+.containerr .parent-2 .card-1 h2{
+    position: absolute;
+    top: 40%;
+    font-size: 40px;
+    color: #13a1a1;
+    text-transform: capitalize;
+}
+.containerr .parent-2 .card-1 .pp{
+    margin-top: 25px;
+    font-size: 20px;
+}
+.containerr .parent-2 .card-1 .aa{
+    position: absolute;
+    top : 80%;
+    left: 50%;
+    text-decoration: none;
+    font-size: 30px;
+    color: #b51010;
+}
+.overlay::before{
+    content: "";
+     position: absolute;
+     width: 0;
+     height: 100%;
+
+     top: 0;
+     right:0;
+     background-color: #1b585c;
+     transition: 3s;
+}
+.overlay:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+
+}
+.overlay::after{
+    content: "";
+     position: absolute;
+     width: 0;
+     height: 100%;
+
+     top: 0;
+     left:0;
+     background-color: #082e31;
+     transition: 3s;
+}
+.overlay:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+
+}
+.parent-2 .card-1::after{
+     content: "";
+
+     position: absolute;
+     width: 100%;
+     height: 0;
+
+     top: 0;
+     left: 0;
+     background-color: #000000;
+     transition: 2s;
+}
+.parent-2 .card-1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+.containerr.overlay{
+    width: 100%;
+    height: 100%;
+ }
+
+/*============================================= weapons===================================== */
+.weapons {
+    margin-bottom: 100px;
+    background-color: #016969;
+    height: 600px;
+    width: 98%;
+    margin: auto;
+}
+.weapons .parent-weapons {
+    padding: 40px;
+    margin-top: 70px;
+}
+.weapons .parent-weapons .weapons-photo {
+    width: 30%;
+    margin-bottom: 30px;
+    float: left;
+    padding: 10px;
+    position: relative;
+}
+.weapons-photo ul {
+    position: absolute;
+    padding-left:  20px;
+}
+.weapons-photo ul li i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    color: #ff0000;
+    position: relative;
+    z-index: 7;
+    background-color:#00999f;
+    font-size: 20px;
+    transition: .7s;
+}
+.weapons-photo ul .active {
+    margin-top: -35px;
+    margin-left: 260px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ff0000;
+    color: #fff;
+}
+.weapons .parent-weapons .weapons-photo img {
+    height: 200px;
+    width: 300px;
+    padding-left: 30px;
+}
+.weapons .parent-weapons .weapons-photo .overlay-weapos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #082e31;
+    border-radius: 30px;
+    opacity: 0;
+    transition: 2s;
+}
+.weapons .parent-weapons .weapons-photo .overlay-weapos:hover{
+    opacity: .7;
+}
+.weapons .weapons-photo .overlay-weapos .text {
+    text-align: center;
+    margin-top: 100px;
+}
+.weapons .weapons-photo .overlay-weapos .text h4 {
+    font-size: 30px;
+    color: #029696fc;
+    background-color: #000000b3;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.weapons .weapons-photo .overlay-weapos .text p {
+    color: #d8edee;
+    font-weight: bold;
+    word-spacing: 3px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.weapons .weapons-photo .overlay-weapos .text i {
+    font-size: 25px;
+    color: red;
+}
+.weapons .parent-weapons .center {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.weapons-photo ul {
+    display: inline;
+    position: absolute;
+    margin-left: 40px;
+}
+/* ================================================Drugs======================== */
+.Drugs {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #00b4ba;
+}
+.Drugs,.parent-Drugs {
+    padding: 60px;
+    background-color: #0a3e40;
+    overflow: auto;
+}
+.Drugs .parent-Drugs .card {
+    width: 30%;
+    height: 150px;
+    background-image:url(img/photo5.jpeg);
+    position: relative;
+    float: left;
+    margin-bottom: 30px;
+    border-top: 3px solid #0c7578;
+}
+.Drugs .parent-Drugs .card2{
+    background-image: url(img/m2jpeg.jpeg);
+}
+.Drugs .parent-Drugs .card-3{
+    background-image: url(img/m3.jpeg);
+}
+.Drugs .parent-Drugs .card-4{
+    background-image: url(img/m4.jpeg);
+}
+.Drugs .parent-Drugs .card-5 {
+     background-image: url(img/m5.jpeg);
+}
+.Drugs .parent-Drugs .card-6{
+    background-image: url(img/m6.jpeg);
+}
+.Drugs .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: #000000;
+    transition: 1.5s;
+    border-bottom: 3px solid #027488;
+}
+.Drugs .card:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.Drugs .card .info {
+    z-index: 3;
+    position: relative;
+}
+.Drugs .card .info i {
+    padding: 20px 20px 0;
+    font-size: 30px;
+    margin-right: 40px;
+    color:#027488;
+}
+.Drugs .parent-Drugs .card .text {
+    width: 70%;
+    margin: -30px 80px 0;
+    color: #00b4ba;
+    transition: 2s;
+}
+.Drugs .parent-Drugs .card .text h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.Drugs .parent-Drugs .card .text p {
+    font-weight: bold;
+    word-spacing: 2px;
+    color: white;
+    transition: 2s;
+    line-height: 1.6;
+}
+.Drugs .parent-Drugs .card .text p del{
+    color: red;
+}
+.Drugs .parent-Drugs .center {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* ==========================================killing================================================ */
+.features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 100vh;
+    
+}
+.KILLING .parent-killing{
+    padding: 60px;
+    background-color: #016969;
+    overflow: auto;
+    width: 100%;
+}
+.KILLING .parent-killing .box {
+    width: 500px;
+    height: 200px;
+    float: left;
+    margin-top: 40px ;
+    margin-right: 350px;
+}
+.KILLING .parent-killing .box h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.KILLING .parent-killing .box hr {
+    width: 170px;
+    height: 6px;
+    background-color:#00b4ba;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.KILLING .parent-killing .box > p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+.KILLING .parent-killing .box p span {
+    color:#000000;
+}
+.KILLING .parent-killing .box .text {
+    margin-top: 30px;
+}
+.KILLING .parent-killing .box .text p {
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: white;
+}
+.KILLING .parent-killing .box .text p i {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #008287;
+    margin-right: 10px;
+    padding: 3px;
+    color: #fff;
+    font-size: 10px;
+}
+.KILLING .parent-killing .image-box img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 7px solid;
+    border-color: #016969 ;
+    outline: 7px solid black;
+}
+.KILLING .parent-killing .image-box ul {
+    margin-left: 150px;
+    margin-top: 15px;
+}
+.KILLING .parent-killing .image-box ul li:hover, .features .parent-killing .image-box ul .active {
+    background-color: #016969;
+    cursor: pointer;
+}
+
+
+
+
+
+/* =================================ratings ==============================*/
+.ratings {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100vh;
+}
+.ratings .parent-rating {
+    background: url(img/images\ \(2\).jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 450px;
+}
+.div-circel {
+    text-align: center;
+    margin: 25px 0 0 810px;
+   
+}
+.div-circel div {
+    background-color: #bdd4d5;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+}
+.div-circel .circel-1{
+    background-color: rgb(3, 3, 79);
+}
+.ratings .parent-rating .overla {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 16, 16, 0.775);
+    color: #fff;
+}
+.ratings .parent-rating .container .card {
+    width: 20%;
+    float: left;
+    margin-left: 4%;
+    text-align: center;
+    margin-top: 150px;
+    overflow: hidden;
+}
+.ratings .parent-rating .container .card .ii {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #00999f;
+    transition: .5s;
+}
+.ratings .parent-rating .container .card h5 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.ratings .parent-rating .container .card p {
+    margin-top: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #dcdcdc;
+}
+/* =======================================about================================ */
+.abuot-last {
+    padding-top: 150px;
+    height: 100vh;
+}
+.abuot-last .last-parent {
+    padding: 100px 0;
+    background: url(img/bacc.avif) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    overflow: auto;
+    position: relative;
+}
+.abuot-last.parent .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000cc;
+}
+.abuot-last .last-parent .card-last {
+    width: 40%;
+    float: left;
+    color: #027488;
+    margin-left: 100px;
+    position: relative;
+    z-index: 20;
+}
+.abuot-last .last-parent .card-last img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    outline: 3px solid #00b4ba;
+    border: 3px solid #082e31;
+}
+.abuot-last.parent .card-last .text {
+    margin-top: -60px;
+    margin-bottom: 35px;
+    margin-left: 110px;
+}
+.abuot-last .last-parent .card-last .text h3 {
+    font-size: 22px;
+}
+.fixed-about .last-parent .card-last .text span {
+    color: #dfeaeb;
+    font-weight: bold;
+}
+.abuot-last .parent .card p {
+    width: 250px;
+    margin: auto;
+    font-weight: bold;
+    color: #bccacd;
+}
+.abuot-last .last-parent .card-last {
+    width: 40%;
+    float: left;
+    color: #d0dcde;
+    margin-left: 100px;
+    position: relative;
+    z-index: 20;
+}
+/* ========================================shotgun=============================== */
+
+.shotgun{
+    width: 80%;
+    margin:100px auto;
+}
+.parent-shotgun{
+    width: 100%;
+    height: 80vh;
+}
+
+.shotgun-item{
+    float: left;
+    width: 30%;
+    background-color: gray;
+    padding: 14px 14px;
+    text-align: center;
+    position: relative;
+}
+.items22{
+    margin: 0 5%;
+   
+}
+.shot-img{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    z-index: 44;
+}
+.shot-img img{
+    width: 95%;
+    
+}
+.shot-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+}
+.shotgun-item:hover .shot-lay{
+      visibility: visible;
+      opacity: 1;
+}
+.shot-lay a{
+    display:block;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background:rgb(0, 166, 255);
+    color: white;
+    margin-left: auto; 
+    border-radius: 50%;
+    margin-top: 7px;
+}
+.shot-lay a i{
+    line-height: 40px;
+}
+.shot-info{
+    color: #fff;
+    padding: 5px;
+}
+.shot-info h2{
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+.shot-info p{
+    color: aqua;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.shotgun-item::after{
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.7);
+    transition: 1s;
+}
+.shotgun-item:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.shotgun-item::before{
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    bottom: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+.shotgun-item:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+/*======================================= footer/================================ */
+.footer-foot {
+    background: url(img/maavia.jpeg) no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 60vh;
+}
+.footer-foot .overlay-last {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b6;
+}
+.footer-foot .container-footer {
+    position: relative;
+}
+.footer-foot .end {
+    height: 150px;
+    margin-left: 50px;
+}
+
+
+
